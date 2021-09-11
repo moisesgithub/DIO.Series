@@ -1,5 +1,5 @@
 ﻿using System;
-using DIO.Series;
+
 namespace DIO.Series.Console
 {
 	class Program
