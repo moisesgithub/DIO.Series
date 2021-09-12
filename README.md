@@ -94,34 +94,12 @@ Adicionar -> `Controller` -> `Controller MVC - Vazio`
             return Ok(id);
         }`
         
-## Resumo da Live
-
-Quando temos usamos qualquer arquitetura para desenvolver uma aplicação devemos separar `Repositórios` dos `Serviços de Terceiros` e separados da `Regra de Negócio` e as `Interfaces` como `Console` e `WebAPI` são apenas para comunicação e dependem da `Regra de Negócio` assim você pode escolher o canal de comunicação mais adequado, podendo ter uma melhor manutenção na aplicação
-
 ## Caminho da Rota 
 
-* Servidor -> `http://localhost` -> Porta `44396/` -> Controller -> `serie/` -> Action -> `ID`
+* Servidor -> `http://localhost` -> Porta `44396/` -> Controller -> `serie/` -> Action -> `ID`        
         
+## Resumo da Live
 
-
-
-
-
-
+Quando usamos qualquer arquitetura para desenvolver uma aplicação devemos separar `Repositórios` dos `Serviços de Terceiros` e separados da `Regra de Negócio` e as `Interfaces` como `Console` e `WebAPI` são apenas para comunicação e dependem da `Regra de Negócio` assim você pode escolher o canal de comunicação mais adequado, podendo ter uma melhor manutenção na aplicação
+       
 [Slides](dio-dotnet-poo-lab-2.pdf)
-
-## Contato
-
-Eliézer Zarpelão
-
-Linkedin:  [br.linkedin.com/in/eliezerzarpelao](http://br.linkedin.com/in/eliezerzarpelao)
-
-WebSite:  [eliezerzarpelao.eti.br](https://eliezerzarpelao.eti.br)
-
-Instagram:  [instagram.com/eliezerzarpelao](https://instagram.com/eliezerzarpelao)
-
-YouTube:  [youtube.com/channel/UC47RD-s-U6fpKTY0soIUn6g](https://www.youtube.com/channel/UC47RD-s-U6fpKTY0soIUn6g/featured?view_as=subscriber)
-
-Twitter:  [@eliezerzarpelao](https://twitter.com/eliezerzarpelao)
-
-Github:  [github.com/elizarp](https://github.com/elizarp)
