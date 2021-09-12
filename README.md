@@ -55,9 +55,53 @@ Adicionar -> `Controller` -> `Controller MVC - Vazio`
 
 ## Inserindo Métodos CRUD
 
-* 
+* Aqui agora vamos implementar os métodos 
+* `GET = Retorna algo`, que retorna a `Serie`, 
+`[HttpGet("")]
+        public IActionResult Lista()
+        {
+            IList<SerieModel> series = new List<SerieModel>();
 
+            series.Add(new SerieModel() { Titulo = "Título Série" });            
+            return Ok(series);
+        }`
 
+* `PUT = Alterar algo`, que altualiza o `id` e o
+` [HttpPut("id")]
+        public IActionResult Atualizar(int id, [FromBody] SerieModel model)
+        {
+            return Ok(model);
+        }`
+
+* `DELETE = Excluir algo`, que exclui o `id`
+`[HttpDelete("id")]
+        public IActionResult Excluir(int id)
+        {
+            return Ok(id);
+        }`
+
+* `POST = Inserir algo`, que insere o `model`,
+`[HttpPost("")]
+        public IActionResult Insere([FromBody] SerieModel model)
+        {
+            return Ok(model);
+        }`
+
+* `GET = Retorna algo`, que retorna a `id`, 
+`[HttpGet("id")]
+        public IActionResult Consulta(int id)
+        {
+            return Ok(id);
+        }`
+        
+## Resumo da Live
+
+Quando temos usamos qualquer arquitetura para desenvolver uma aplicação devemos separar `Repositórios` dos `Serviços de Terceiros` e separados da `Regra de Negócio` e as `Interfaces` como `Console` e `WebAPI` são apenas para comunicação e dependem da `Regra de Negócio` assim você pode escolher o canal de comunicação mais adequado, podendo ter uma melhor manutenção na aplicação
+
+## Caminho da Rota 
+
+* Servidor -> `http://localhost` -> Porta `44396/` -> Controller -> `serie/` -> Action -> `ID`
+        
 
 
 

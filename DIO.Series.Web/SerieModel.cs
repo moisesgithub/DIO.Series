@@ -13,5 +13,25 @@ namespace DIO.Series.Web
         public string Descricao { get; set; }
         public int Ano { get; set; }
         public bool Excluido { get; set; }
+
+        public SerieModel()
+        {
+            //Construtor vazio
+        }
+
+        public SerieModel(Serie serie)
+        {
+            Id = serie.retornaId();
+            Genero = serie.retornaGenero();
+            Titulo = serie.retornaTitulo();
+            Descricao = serie.retornaDescricao();
+            Ano = serie.retornaAno();
+            Excluido = serie.retornaExcluido();
+        }
+
+        public Serie ToSerie()
+        {
+            return new Serie(Id, Genero, Titulo, Descricao, Ano);
+        }
     }
 }

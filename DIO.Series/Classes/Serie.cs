@@ -47,7 +47,23 @@ namespace DIO.Series
 		{
 			return this.Excluido;
 		}
-        public void Excluir() {
+
+		public Genero retornaGenero()
+        {
+			return Genero;
+        }
+
+		public string retornaDescricao()
+		{
+			return Descricao;
+		}
+
+		public int retornaAno()
+		{
+			return Ano;
+		}
+
+		public void Excluir() {
             this.Excluido = true;
         }
     }
