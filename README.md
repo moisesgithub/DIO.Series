@@ -100,6 +100,4 @@ Adicionar -> `Controller` -> `Controller MVC - Vazio`
         
 ## Resumo da Live
 
-Quando usamos qualquer arquitetura para desenvolver uma aplicação devemos separar `Repositórios` dos `Serviços de Terceiros` e separados da `Regra de Negócio` e as `Interfaces` como `Console` e `WebAPI` são apenas para comunicação e dependem da `Regra de Negócio` assim você pode escolher o canal de comunicação mais adequado, podendo ter uma melhor manutenção na aplicação
-       
-[Slides](dio-dotnet-poo-lab-2.pdf)
+Quando usamos qualquer arquitetura para desenvolver uma aplicação devemos separar `Repositórios` dos `Serviços de Terceiros` e separados da `Regra de Negócio` e as `Interfaces` como `Console` e `WebAPI` são apenas para comunicação e dependem da `Regra de Negócio` assim você pode escolher o canal de comunicação mais adequado, podendo ter uma melhor manutenção na aplicação.
